@@ -12,7 +12,7 @@ export default function Navbar(props) {
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link href="/">
               <a
-                className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+                className="text-white text-sm font-bold  leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
                 href="#landing"
               >
                  Spring Floki
@@ -54,7 +54,7 @@ export default function Navbar(props) {
                   href="https://twitter.com/intent/user?screen_name=FlokiSpring"
                   target="_blank"
                 >
-                  <i className="lg:text-blueGray-200 text-blueGray-400 fab fa-twitter text-lg leading-lg " />
+                  <i className="lg:text-blueGray-200 text-blueGray-400 hover:text-blueGray-500 transition-all duration-400 fab fa-twitter text-lg leading-lg " />
                   <span className="lg:hidden inline-block ml-2">Twitter</span>
                 </a>
               </li>
@@ -65,14 +65,14 @@ export default function Navbar(props) {
                   href=" https://t.me/SpringFloki"
                   target="_blank"
                 >
-                  <i className="lg:text-blueGray-200 text-blueGray-400 fab fa-telegram text-lg leading-lg " />
+                  <i className="lg:text-blueGray-200 text-blueGray-400 hover:text-blueGray-500 transition-all duration-400 fab fa-telegram text-lg leading-lg " />
                   <span className="lg:hidden inline-block ml-2">Telegram</span>
                 </a>
               </li>
 
               <li className="flex items-center">
                 <a
-                  className="bg-white text-blueGray-700 active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+                  className="bg-white text-blueGray-700 active:bg-blueGray-50 hover:text-blueGray-500 transition-all duration-400 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
                   type="button"
                   href="https://poocoin.app/tokens/0xd0e5e51a4456399f11296534f72882b1d8af8b0d"
                   target="_blank"

@@ -1,11 +1,17 @@
 import React from "react";
 import Link from "next/link";
+import dynamic from "next/dynamic"
 
 // components
 import Navbar from "components/Navbars/AuthNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
 export default function Landing() {
+
+  const textToCopy = "0xd0e5e51a4456399f11296534f72882b1d8af8b0d"
+
+  const CC = dynamic(() => import("../components/copyToClipboard").then(mod => mod.CopyToClipboard), { ssr: false })
+
   return (
     <>
       <Navbar transparent />
@@ -13,7 +19,7 @@ export default function Landing() {
       <a className="hidden" id="landing">Website by Aryes - TG: Aryamsamsam </a>
         <div className="relative pt-18 pb-32 flex content-center items-center justify-center min-h-screen-75">
           <div
-            className="absolute top-0 w-full h-full bg-center bg-cover"
+            className="absolute top-0 w-full h-screen bg-center bg-cover"
             style={{
               backgroundImage:
                 "url('https://i.imgur.com/0v5KIfL.png')",
@@ -26,23 +32,28 @@ export default function Landing() {
           </div>
           <div className="container relative mx-auto">
             <div className="items-center flex flex-wrap">
-              <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div className="w-full lg:w-6/12 px-24 ml-auto mr-auto text-center">
                 <div className="pr-12">
-                  <h1 className="text-white font-bold text-6xl pt-16">
+                  <h1 className="text-white font-bold text-6xl pt-16 mb-72">
                     Spring Floki
                   </h1>
+                  <div className="top-2/4 pt-72 items-center justify-center text-center">
                   <p className="pt-32 text-lg text-blueGray-200 ">
                     The top trending memecoin with real utility has just launched on the BEP-20 Smart Chain! Come join the family!
                   </p>
                  
                 <a
-                  className="mt-6 bg-yellow-500 text-white hover:bg-yellow-400 active:bg-yellow-400 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 lg:mt-4 ease-linear transition-all duration-150"
+                  className="mt-6 bg-yellow-500 text-white hover:bg-yellow-200 active:bg-yellow-400 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 lg:mt-4 ease-linear transition-all duration-150"
                   type="button"
                   href="https://poocoin.app/tokens/0xd0e5e51a4456399f11296534f72882b1d8af8b0d"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   <i className="fas fa-money-check-dollar"></i> BUY SPRING FLOKI
                 </a>
+                </div>
+                <div className="left-[400px] h-12 w-12 flex justify-center items-center text-center">
+{ /*               <CC content={textToCopy} className="flex absolute left-10" />*/}
+                </div>
                 <a className="hidden">Website by Aryes - TG: Aryamsamsam </a>
                 </div>
               </div>
@@ -55,8 +66,8 @@ export default function Landing() {
           </div>
         </div>
 
-        <section className="pb-12 bg-yellow-400 -mt-12">
-          <div className="container mx-auto px-4 py-24">
+        <section className="pb-12 bg-yellow-400 pt-24 -mt-12">
+          <div className="container mx-auto px-4 pt-32 py-24">
             <div className="flex flex-wrap">
               <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-4 shadow-lg rounded-lg">

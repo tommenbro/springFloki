@@ -2177,6 +2177,11 @@ select {
   line-height: 1;
 }
 
+.text-7xl {
+  font-size: 4.5;
+  line-height: 2.5rem;
+}
+
 .leading-none {
   line-height: 1;
 }

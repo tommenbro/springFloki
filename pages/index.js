@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import dynamic from "next/dynamic"
 
 // components
 import Navbar from "components/Navbars/AuthNavbar.js";
@@ -16,7 +15,7 @@ export default function Landing() {
       <Navbar transparent />
       <main>
       <a className="hidden" id="landing">Website by Aryes - TG: Aryamsamsam </a>
-        <div className="relative pt-18 pb-32 flex content-center items-center justify-center min-h-screen-75">
+        <div className="relative pt-24 pb-32 flex content-center items-center justify-center min-h-screen-75">
           <div
             className="absolute top-0 w-full h-screen bg-center bg-cover"
             style={{

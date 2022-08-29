@@ -10,7 +10,6 @@ export default function Landing() {
 
   const textToCopy = "0xd0e5e51a4456399f11296534f72882b1d8af8b0d"
 
-  const CC = dynamic(() => import("../components/copyToClipboard").then(mod => mod.CopyToClipboard), { ssr: false })
 
   return (
     <>
@@ -57,7 +56,7 @@ export default function Landing() {
                 <a className="hidden">Website by Aryes - TG: Aryamsamsam </a>
                 </div>
               </div>
-            </div>
+            </div> 
           </div>
           <div
             className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-16"

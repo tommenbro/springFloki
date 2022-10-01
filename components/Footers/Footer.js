@@ -49,7 +49,15 @@ export default function Footer() {
                         className="text-white font-semibold block pb-2 text-sm"
                         href="https://poocoin.app/tokens/0x77282df2e846a641530f08cf3988602884218d39"
                       >
-                        Buy Spring Floki
+                        Buy RippleBurnReflect
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="text-white font-semibold block pb-2 text-sm"
+                        href="https://www.pinksale.finance/pinklock/record/1041792?chain=BSC"
+                      >
+                        Liquidity Locked
                       </a>
                     </li>
                     <li>
@@ -68,10 +76,8 @@ export default function Footer() {
                         Contract
                       </a>
                     </li>
-                    
                   </ul>
                 </div>
-   
               </div>
             </div>
           </div>

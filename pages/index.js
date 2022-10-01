@@ -13,7 +13,7 @@ export default function Landing() {
   return (
     <>
       <Navbar transparent />
-      <main>
+      <main className="bg-black">
       <a className="hidden" id="landing">Website by Aryes - TG: Aryamsamsam </a>
         <div className="relative pt-24 pb-32 flex content-center items-center justify-center min-h-screen-75">
           <div
@@ -32,40 +32,55 @@ export default function Landing() {
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-24 ml-auto mr-auto text-center">
                 <div className="pr-12">
-                  <h1 className="text-white font-bold text-6xl pt-48">
+                  <h1 className="text-white font-bold text-6xl pt-24">
                     RippleBurnReflect
                   </h1>
-                  <div className="top-2/4 pt-12 items-center justify-center text-center">
-                  <p className="pt-2 text-lg text-blueGray-200 ">
+                  <div className="top-2/4 pt-6 items-center justify-center text-center">
+                  <p className="pt-2 text-lg text-white">
                     The revolutionary XRP rewards token, which brings real value to its investors
+                    <br/>
+                    <div className="mt-12 text-2xl">
+                    <span className="font-light text-2xl">Supply burnt: <span className="font-bold">5.92%</span></span>
+                    </div>
                   </p>
                  
+                
+                </div>
+                <p className="pt-12 text-lg font-semibold text-blueGray-200 ">
+                    Currently 10/10 tax on every transaction (Adjusted along the journey)
+                  </p>
+                  <p className="pt-2 text-sm text-blueGray-200 ">
+                    4% XRP reflections
+                    <br/>
+                    3% Marketing
+                    <br/>
+                    1% Development
+                    <br/>
+                    0% Liquidity
+                    <br/>
+                    2% Burn
+                  </p>
+                <div className="left-[400px] h-12 w-12 flex justify-center items-center text-center">
+{ /*               <CC content={textToCopy} className="flex absolute left-10" />*/}
+                </div>
                 <a
-                  className="mt-24 bg-white text-black text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 lg:mt-12 ease-linear transition-all duration-150"
+                  className="mt-6 bg-white text-black text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 lg:mt-12 ease-linear transition-all duration-150"
                   type="button"
                   href="https://poocoin.app/tokens/0x77282df2e846a641530f08cf3988602884218d39"
                   target="_blank" rel="noreferrer"
                 >
                   <i className="fas fa-money-check-dollar"></i> BUY $RBR
                 </a>
-                </div>
-                <div className="left-[400px] h-12 w-12 flex justify-center items-center text-center">
-{ /*               <CC content={textToCopy} className="flex absolute left-10" />*/}
-                </div>
                 <a className="hidden">Website by Aryes - TG: Aryamsamsam </a>
                 </div>
+                
               </div>
             </div> 
           </div>
-          <div
-            className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-16"
-            style={{ transform: "translateZ(0)" }}
-          >
-          </div>
         </div>
 
-        <section className="pb-12 bg-black pt-24 -mt-12">
-          <div className="container mx-auto px-4 pt-32 py-24">
+        <section className="pb-12 bg-black -mt-12">
+          <div className="container mx-auto px-4 pt-12 py-12">
             <div className="flex flex-wrap">
               <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-4 shadow-lg rounded-lg">
@@ -73,22 +88,22 @@ export default function Landing() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-black">
                       <i className="fas fa-award"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Built by hodlers, for the holders</h6>
-                    <p className="mt-2 mb-4 text-blueGray-500">
+                    <h6 className="text-xl font-semibold text-black">Built by hodlers, for the holders</h6>
+                    <p className="mt-2 mb-4 text-black">
                       Our holders believe in the vision. We know that the XRP reflections are more rewarding than most can only imagine.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+              <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center" href="#lp">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-black">
                       <i className="fas fa-lock"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Safety first</h6>
-                    <p className="mt-2 mb-4 text-blueGray-500">
-                      The team behind $RBR decided to fork the cleanest and safest contract in BSC history, together with a proper LP lock.
+                    <h6 className="text-xl font-semibold text-black">Safety first</h6>
+                    <p className="mt-2 mb-4 text-black">
+                      The team behind $RBR decided to fork the cleanest and safest contract in BSC history, together with a PinkSafe LP lock.
                     </p>
                   </div>
                 </div>
@@ -99,8 +114,8 @@ export default function Landing() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-black">
                       <i className="fas fa-fingerprint"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Utility</h6>
-                    <p className="mt-2 mb-4 text-blueGray-500">
+                    <h6 className="text-xl font-semibold text-black">Utility</h6>
+                    <p className="mt-2 mb-4 text-black">
                       The token itself is a utility, with a true burn feature and massive XRP reflections generated automatically. Swap, staking, Post2Earn and more bullish utilities will come.
                     </p>
                   </div>
@@ -120,11 +135,7 @@ export default function Landing() {
                 <p className="text-xl leading-relaxed mt-4 mb-12 text-white">
                 RippleBurnReflect is a true community-driven project in the old style of bsc. We are here to stay, we are here to bring real value to our investors. $RBR has a vision that goes far beyond being a mere memecoin. Our holders earn $XRP automatically by just holding, no matter how $RBR moves. This token is here to win, bringing future partnerships and strong community which will make every holder win.
                 </p>
-                <Link href="https://pancakeswap.finance/swap?outputCurrency=0x77282DF2E846A641530f08cf3988602884218d39">
-                  <a href="https://pancakeswap.finance/swap?outputCurrency=0x77282DF2E846A641530f08cf3988602884218d39" className="pt-8 font-bold text-3xl text-white hover:bg-gray-700 mt-8">
-                    Buy RippleBurnReflect on PancakeSwap
-                  </a>
-                </Link>
+                
               </div>
             </div>
             <div className="flex flex-wrap mt-12 justify-center">
@@ -150,6 +161,11 @@ export default function Landing() {
                 From every transactions, holders are rewarded heavily in $XRP. The more you hold, the more you earn. The team has also implemented a true burn feature, which means that 1% of every transaction is gone from the total supply. This is a true burn, as the tokens are burned from the total supply, not just sent to a black hole. These are just the starting tokenomics, more utility will come.
                 </p>
               </div>
+              <Link href="https://pancakeswap.finance/swap?outputCurrency=0x77282DF2E846A641530f08cf3988602884218d39">
+                  <a href="https://pancakeswap.finance/swap?outputCurrency=0x77282DF2E846A641530f08cf3988602884218d39" className="pt-12 font-bold text-3xl text-white hover:bg-gray-700 mt-6">
+                    Buy RippleBurnReflect on PancakeSwap
+                  </a>
+                </Link>
             </div>
           </div>
         </section>
@@ -202,7 +218,7 @@ export default function Landing() {
                         </div>
                         <div>
                           <h4 className="text-blueGray-200">
-                            Community listings
+                            Supply Shock Burn
                           </h4>
                         </div>
                       </div>

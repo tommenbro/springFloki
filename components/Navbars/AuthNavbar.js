@@ -15,7 +15,7 @@ export default function Navbar(props) {
                 className="text-white text-sm font-bold  leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
                 href="#landing"
               >
-                 Spring Floki
+                 RippleBurnReflect
               </a>
             </Link>
             <button
@@ -51,7 +51,7 @@ export default function Navbar(props) {
               <li className="flex items-center">
                 <a
                   className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="https://twitter.com/intent/user?screen_name=FlokiSpring"
+                  href="https://twitter.com/intent/user?screen_name=XRPBurnReflect"
                   target="_blank"
                 >
                   <i className="lg:text-blueGray-200 text-blueGray-400 hover:text-blueGray-500 transition-all duration-400 fab fa-twitter text-lg leading-lg " />
@@ -62,7 +62,7 @@ export default function Navbar(props) {
               <li className="flex items-center">
                 <a
                   className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href=" https://t.me/SpringFloki"
+                  href=" https://t.me/RippleBurnReflectPortal"
                   target="_blank"
                 >
                   <i className="lg:text-blueGray-200 text-blueGray-400 hover:text-blueGray-500 transition-all duration-400 fab fa-telegram text-lg leading-lg " />
@@ -74,10 +74,10 @@ export default function Navbar(props) {
                 <a
                   className="bg-white text-blueGray-700 active:bg-blueGray-50 hover:text-blueGray-500 transition-all duration-400 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
                   type="button"
-                  href="https://poocoin.app/tokens/0xd0e5e51a4456399f11296534f72882b1d8af8b0d"
+                  href="https://pancakeswap.finance/swap?outputCurrency=0x77282DF2E846A641530f08cf3988602884218d39"
                   target="_blank"
                 >
-                  <i className="fas fa-money-check-dollar"></i> BUY NOW
+                  <i className="fas fa-money-check-dollar"></i> BUY $RBR
                 </a>
               </li>
             </ul>

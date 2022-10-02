@@ -40,7 +40,7 @@ export default function Landing() {
                     The revolutionary XRP rewards token, which brings real value to its investors
                     <br/>
                     <div className="mt-12 text-2xl">
-                    <span className="font-light text-2xl">Supply burnt: <span className="font-bold">5.92%</span></span>
+                    <span className="font-light text-2xl">Supply burnt: <span className="font-bold">6.16%</span></span>
                     </div>
                   </p>
                  
@@ -56,9 +56,9 @@ export default function Landing() {
                     <br/>
                     1% Development
                     <br/>
-                    0% Liquidity
+                    1% Liquidity
                     <br/>
-                    2% Burn
+                    1% Burn
                   </p>
                 <div className="left-[400px] h-12 w-12 flex justify-center items-center text-center">
 { /*               <CC content={textToCopy} className="flex absolute left-10" />*/}
@@ -260,7 +260,7 @@ export default function Landing() {
                         </div>
                         <div>
                           <h4 className="text-white">
-                            More utilities and features that brings RBR and XRP together
+                            More utilities and features that bring RBR and XRP together
                           </h4>
                         </div>
                       </div>
